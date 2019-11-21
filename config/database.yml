@@ -80,6 +80,20 @@ test:
 #
 production:
   <<: *default
-  database: dog-blog_production
-  username: dog-blog
-  password: <%= ENV['DOG-BLOG_DATABASE_PASSWORD'] %>
+  host:  <%= ENV["PG_HOST"] %>
+  database: <%= ENV["PG_DATABASE"] %>
+  username: <%= ENV["PG_USERNAME"] %>
+  password: <%= ENV["PG_PASSWORD"] %>
+
+
+
+
+
+
+
+
+
+
+
+
+
