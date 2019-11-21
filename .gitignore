@@ -11,6 +11,13 @@ capybara-*.html
 *.orig
 rerun.txt
 pickle-email-*.html
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+tmp/*
+.ruby_version
+!/log/.keep
+!/tmp/.keep
 
 *.swp
 *.swo
