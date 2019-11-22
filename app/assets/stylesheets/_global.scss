@@ -37,6 +37,10 @@ p {
   line-height: 1.75;
 }
 
+div{
+  position: relative;
+}
+
 .text-faded {
   color: fade-out($white, 0.7);
 }
@@ -123,5 +127,15 @@ p {
 #admin-menu{
   z-index:10;
   background: $white;
+  border-bottom: $primary 1px solid;
+
+  .navbar-nav{
+    width:100%;
+  }
 }
 
+#contact-form{
+  z-index:10;
+  position:relative;
+  display:block;
+}

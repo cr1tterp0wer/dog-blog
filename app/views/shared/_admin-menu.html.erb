@@ -2,8 +2,17 @@
   <div class="container">
       <ul class="navbar-nav ">
         <li class="nav-item px-lg-4">
+          <%= link_to "Home", root_url, class: "nav-link text-expanded" %>
+        </li>
+
+        <li class="nav-item px-lg-4">
+          <%= link_to "Messages", contact_messages_url, class: "nav-link text-expanded" %>
+        </li>
+
+        <li class="nav-item px-lg-4">
           <%= link_to "Logout", { controller: "sessions", action: "logout" }, class: "nav-link text-expanded" %>
         </li>
+
       </ul>
     </div>
 </nav>
