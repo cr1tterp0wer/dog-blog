@@ -41,6 +41,31 @@ div{
   position: relative;
 }
 
+textarea,
+input{
+  position:relative;
+  display:block;
+  padding:5px;
+  width:100%;
+
+  &:focus{
+    background: rgba(255,255,255,0.6);
+    outline:none;
+    border: 1px solid $primary;
+  }
+}
+
+input{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid brown;
+  margin: 0 0 15px 0;
+}
+
+textarea{
+  background: rgba(255,255,255,0.5);
+}
+
 .text-faded {
   color: fade-out($white, 0.7);
 }
@@ -124,14 +149,31 @@ div{
   color:$danger;
 }
 
+#errors{
+  background: $danger;
+  color:white;
+  padding:10px;
+  &:empty{
+    display:none;
+  }
+}
+
+#notice{
+  background: $info;
+  color:$white;
+  padding:10px;
+  &:empty{
+    display:none;
+  }
+}
+
 #admin-menu{
-  z-index:10;
+  position:fixed;
+  width:100%;
+  z-index:100;
   background: $white;
   border-bottom: $primary 1px solid;
 
-  .navbar-nav{
-    width:100%;
-  }
 }
 
 #contact-form{
