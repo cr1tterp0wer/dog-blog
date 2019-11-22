@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <% if is_logged? %>
+      <%= render "shared/admin-menu" %>
+    <% end %>
     <%= yield %>
   </body>
   <%= render "shared/footer" %>

@@ -89,12 +89,39 @@ p {
   z-index:1;
 }
 .bg-video-overlay{
-    z-index:5;
-    position:fixed;
-    height:100%;
-    min-height:100vh;
-    width:100%;
-    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65));
-  }
+  z-index:5;
+  position:fixed;
+  height:100%;
+  min-height:100vh;
+  width:100%;
+  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65));
+}
 
+#login{
+  margin: 0 auto;
+  max-width: 600px;
+  justify-self: center;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  input{
+    display:block;
+    width:100%;
+    max-width:350px;
+  }
+  .btn{
+    max-width:100px;
+  }
+}
+
+.errors{
+  list-style:none;
+  color:$danger;
+}
+
+#admin-menu{
+  z-index:10;
+  background: $white;
+}
 
