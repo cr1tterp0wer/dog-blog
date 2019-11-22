@@ -3,5 +3,11 @@ Rails.application.routes.draw do
   
   root 'static#home'
 
+  controller :sessions do 
+    get  'login'  => :new
+    post 'login'  => :create
+    get  'logout' => :logout
+  end
+
   get '/:url' => 'static#show'
 end

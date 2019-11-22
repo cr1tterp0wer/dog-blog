@@ -1,0 +1,14 @@
+<div id="login" class="p-5 bg-white d-flex flex-column">
+
+  <h1 class="mt-5 pt-5">Login</h1>
+  <%= form_with(model: session,url: login_url, local: true) do |form| %>
+
+    <%= form.text_field :username, placeholder: "USERNAME",class: "text" %>
+    <%= form.password_field :password, placeholder: "PASSWORD", class:"text" %>
+    
+    <%= render 'shared/errors' %>
+    <div class="actions">
+      <%= form.submit "Submit", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
