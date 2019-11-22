@@ -17,4 +17,5 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require video-autoplay
 //= require_tree .
