@@ -1,3 +1,4 @@
+.cta-bare,
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -23,4 +24,8 @@
       z-index:5;
     }
   }
+}
+
+.cta-bare{
+  background-color:transparent;
 }
