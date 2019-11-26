@@ -1,9 +1,19 @@
 document.addEventListener("turbolinks:load",function(){
-$("#slider01").slick({
+  
+  $("#slider01-focus").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: "#slider01",
+  });
+
+  $("#slider01").slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
     dots: true,
+    asNavFor: "#slider01-focus",
     responsive: [
       {
         breakpoint: 768,

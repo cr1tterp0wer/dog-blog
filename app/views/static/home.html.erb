@@ -17,7 +17,7 @@
             <p class="mb-3">Because every animal is unique and requires personal attention and individual care, I take it upon myself to see that each and every member of the pack is tended to based on their specific needs.</p>
           </p>
           <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="/contact">Sign Up Today!</a>
+            <%= render "shared/sign-up-button" %>
           </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
             </h3>
             <div class=" row icon-services mb-5" id="services-list">
               <div class="col-lg-4 text-center">
-                <a href="/services">
+                <a href="/services#dog-walking">
                   <i class="fas fa-walking"></i> 
                   <h4 class="section-heading mt-3">
                     <span class="section-heading-upper">
@@ -43,7 +43,17 @@
                 </a>
               </div>
               <div class="col-lg-4 text-center">
-                <a href="/services">
+                <a href="/services#animal-training">
+                  <i class="fas fa-paw"></i>
+                  <h4 class="section-heading mt-3">
+                    <span class="section-heading-upper">
+                      Animal Training 
+                    </span>
+                  </h4>
+                </a>
+              </div>
+              <div class="col-lg-4 text-center">
+                <a href="/services#animal-sitting">
                   <i class="fas fa-baby-carriage"></i>
                   <h4 class="section-heading mt-3">
                     <span class="section-heading-upper">
@@ -52,21 +62,13 @@
                   </h4>
                 </a>
               </div>
-              <div class="col-lg-4 text-center">
-                <a href="/services">
-                  <i class="fab fa-black-tie"></i>
-                  <h4 class="section-heading mt-3">
-                    <span class="section-heading-upper">
-                      Animal Training 
-                    </span>
-                  </h4>
-                </a>
-              </div>
             </div>
             <hr>
-            <%= render "shared/slide02" %>
-            <a class="btn btn-primary btn-xl" href="/contact">Sign Up Today!</a>
-
+            <div class="col-md-9 m-auto" id="slide01-wrap">
+              <%= render "shared/slide01-focus" %>
+              <%= render "shared/slide01" %>
+            </div>
+            <%= render "shared/sign-up-button" %>
           </div>
         </div>
       </div>

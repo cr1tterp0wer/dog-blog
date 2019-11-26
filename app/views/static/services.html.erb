@@ -2,7 +2,7 @@
   <%= render "shared/site-heading" %>
   <%= render "shared/menu" %>
 
-  <section class="page-section">
+  <section id="dog-walking" class="page-section">
     <div class="container">
       <div class="product-item">
         <div class="product-item-title d-flex">
@@ -16,17 +16,18 @@
         <%= image_tag "dog-walking.jpg", class:"product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" %>
         <div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">I take pride in my work, and it shows. 
+            <p class="">I take pride in my work, and it shows. 
               Every time your animal is walked with me it will be an experience
               worth having. Whether it's through the park, in the ciy, or in the backyard 
               your pet will be coming home happy.</p>
+             <%= render "shared/sign-up-button" %>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="page-section">
+  <section id="animal-training" class="page-section">
     <div class="container">
       <div class="product-item">
         <div class="product-item-title d-flex">
@@ -40,16 +41,17 @@
         <%= image_tag "dog-training.jpg", class: "product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" %>
         <div class="product-item-description d-flex ml-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Behavioural training is a vital part in a pet owner's life.
+            <p class="">Behavioural training is a vital part in a pet owner's life.
               My training program develops a sustainable relationship built on trust
-              communication, and discipline between pet and owner.
+              communication, and discipline between pet and owner.</p>
+             <%= render "shared/sign-up-button" %>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="page-section">
+  <section id="animal-sitting" class="page-section">
     <div class="container">
       <div class="product-item">
         <div class="product-item-title d-flex">
@@ -64,9 +66,10 @@
         <%= image_tag "dog-sitting.jpg", class: "product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" %>
         <div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Travelling can be stressful and finding a responsible
+            <p class="">Travelling can be stressful and finding a responsible
               sitter can be a challenge. Luckily I provide a simple sitting platform
-              so you can rest easy knowing your animal is well taken care of.
+              so you can rest easy knowing your animal is well taken care of. </p>
+             <%= render "shared/sign-up-button" %>
           </div>
         </div>
       </div>
