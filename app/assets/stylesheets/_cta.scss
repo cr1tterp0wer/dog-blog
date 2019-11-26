@@ -29,3 +29,11 @@
 .cta-bare{
   background-color:transparent;
 }
+
+.cta-inner{
+  z-index:5;
+  a,span,div{
+    position:relative;
+    z-index:10;
+  }
+}

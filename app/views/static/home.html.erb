@@ -23,25 +23,56 @@
       </div>
     </div>
   </section>
-
-  <section class="page-section cta">
+<section class="page-section cta">
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 mx-auto">
+        <div class="col-xl-12 mx-auto">
           <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-5">
-                <span class="section-heading-upper">Tell me about your pet</span>
-                <span class="section-heading-lower">Contact</span>
-              </h2>
+            <h3 class="text-center section-heading mb-5">
+              <span class="section-heading-lower">Services</span>
+            </h3>
+            <div class=" row icon-services mb-5" id="services-list">
+              <div class="col-lg-4 text-center">
+                <a href="/services">
+                  <i class="fas fa-walking"></i> 
+                  <h4 class="section-heading mt-3">
+                    <span class="section-heading-upper">
+                      Dog Walking
+                    </span>
+                  </h4>
+                </a>
+              </div>
+              <div class="col-lg-4 text-center">
+                <a href="/services">
+                  <i class="fas fa-baby-carriage"></i>
+                  <h4 class="section-heading mt-3">
+                    <span class="section-heading-upper">
+                     Animal Sitting 
+                    </span>
+                  </h4>
+                </a>
+              </div>
+              <div class="col-lg-4 text-center">
+                <a href="/services">
+                  <i class="fab fa-black-tie"></i>
+                  <h4 class="section-heading mt-3">
+                    <span class="section-heading-upper">
+                      Animal Training 
+                    </span>
+                  </h4>
+                </a>
+              </div>
+            </div>
+            <hr>
+            <%= render "shared/slide02" %>
+            <a class="btn btn-primary btn-xl" href="/contact">Sign Up Today!</a>
 
-
-            <%= render "shared/contact-form" %>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
+</section>
+   
   <section class="page-section cta-bare">
     <div class="container">
       <div class="row">
@@ -61,6 +92,23 @@
       </div>
     </div>
   </section>
+
+  <section class="page-section cta mb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Tell me about your pet</span>
+                <span class="section-heading-lower">Contact</span>
+              </h2>
+            <%= render "shared/contact-form" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </main>
 

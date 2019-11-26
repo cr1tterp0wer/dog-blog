@@ -12,11 +12,13 @@
 //
 //= require jquery3
 //= require jquery.easing
+//= require jquery.slick
 //= require popper
 //= require bootstrap
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require contact-message-ajax
+//= require main
 //= require_tree .
 
