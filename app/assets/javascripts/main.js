@@ -34,5 +34,41 @@ document.addEventListener("turbolinks:load",function(){
         }
       }
     ]
-  })
+  });
+
+  $("#slider-testimonials").slick({
+    centerPadding: '60px',
+    slidesToShow: 1,
+    dots: true,
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });  
+
+  $("#slider-testimonials").on( 'beforeChange', function(){
+    $(this).find('.slick-current img').addClass('shrink-shift');
+  });
+
+  $("#slider-testimonials").on( 'afterChange', function(){
+    $(this).find('.slick-current img').removeClass('shrink-shift');
+  });
+
 });
