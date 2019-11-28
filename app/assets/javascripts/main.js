@@ -41,6 +41,7 @@ document.addEventListener("turbolinks:load",function(){
     slidesToShow: 1,
     dots: true,
     fade: true,
+    speed: 100,
     responsive: [
       {
         breakpoint: 768,
@@ -67,8 +68,7 @@ document.addEventListener("turbolinks:load",function(){
     $(this).find('.slick-current img').addClass('shrink-shift');
   });
 
-  $("#slider-testimonials").on( 'afterChange', function(){
-    $(this).find('.slick-current img').removeClass('shrink-shift');
-  });
-
+  $('#slider-testimonials').on('afterChange', function(){
+    $(this).find('.slick-current img').removeClass('shrink-shift')
+  })
 });
