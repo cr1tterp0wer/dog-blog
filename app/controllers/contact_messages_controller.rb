@@ -8,6 +8,10 @@ class ContactMessagesController < ApplicationController
   def create
     @contact_message = ContactMessage.new(contact_message_params)
     if @contact_message.save
+
+      ContactMailer.with(contact_message: @contact_message).thank_you.deliver_now
+      ContactMailer.with(contact_message: @contact_message).contact_alert.deliver_now
+
       render json: { status: 'success', message: "Thank you #{@contact_message.name} for your message!" }
     else
       render json: { status: 'failure', message: @contact_message.errors.map{|k,v|" #{k} #{v} " } }

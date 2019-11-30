@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @contact.name %>, has filled out a contact
+    message form!</h1>
+    <p>
+      <%= @contact.name %>
+    </p> 
+    <p>
+      <%= @contact.email %>
+    </p>
+    <p>
+      <%= @contact.message %>
+    </p>
+    <%= render "shared/footer" %>
+  </body>
+</html>
