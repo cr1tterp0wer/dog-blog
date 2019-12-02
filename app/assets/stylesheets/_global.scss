@@ -335,4 +335,12 @@ textarea{
   transform: scale(0.92);
 }
 
+#gallery{
+  display:grid;
+  grid-template-columns: repeat( auto-fill, minmax(250px, 1fr ) );
+  grid-gap:10px;
 
+  img{
+    width:100%;
+  }
+}
