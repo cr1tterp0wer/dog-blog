@@ -11,8 +11,6 @@ class ContactMailer < ApplicationMailer
     @contact = params[:contact_message]
 
     contact_recipients = [ "capodacac@gmail.com","tidzix@gmail.com" ]
-    contact_recipients.each do |a|
-      mail( to: a, subject: "Contact Form Submission - Tijana Walks.com" )
-    end
+    mail( to: contact_recipients.join(","), subject: "Contact Form Submission - Tijana Walks.com" )
   end
 end
